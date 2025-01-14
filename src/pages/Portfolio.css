@@ -1,0 +1,540 @@
+/* src/pages/Portfolio.css */
+.portfolio {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.portfolio-content {
+  padding: 100px 2rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  font-size: 2.5rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.project-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.project-header h2 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.github-link img {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.3s ease;
+}
+
+.github-link:hover img {
+  transform: translateY(-2px);
+}
+
+.project-description {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.project-details h3 {
+  color: #34495e;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.project-details ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-details li {
+  color: #555;
+  margin-bottom: 0.5rem;
+  padding-left: 1.2rem;
+  position: relative;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.project-details li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #3498db;
+}
+
+.project-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+.tool-tag {
+  background: #f0f8ff;
+  color: #3498db;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+  }
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+/* Update in Portfolio.css */
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.project-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.project-image-container {
+  flex: 0 0 300px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
+}
+
+.project-info {
+  flex: 1;
+}
+
+/* Rest of your existing CSS... */
+
+@media (max-width: 768px) {
+  .project-content {
+    flex-direction: column;
+  }
+
+  .project-image-container {
+    flex: 0 0 200px;
+    width: 100%;
+  }
+}
+/* Add to your existing Portfolio.css */
+.streamlit-section {
+  margin-bottom: 4rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.streamlit-container {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  background: #f8f9fa;
+  border-radius: 12px 12px 0 0;
+}
+
+.streamlit-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px 12px 0 0;
+}
+
+.streamlit-info {
+  padding: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin: 3rem 0 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+}
+
+/* Add these to your Portfolio.css */
+.streamlit-section {
+  margin-bottom: 4rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.streamlit-container {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  background: #f8f9fa;
+  border-radius: 12px 12px 0 0;
+}
+
+.streamlit-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px 12px 0 0;
+}
+
+.streamlit-info {
+  padding: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin: 3rem 0 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+}
+.streamlit-section {
+  margin-bottom: 4rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.streamlit-container {
+  width: 100%;
+  height: 800px; /* Increased height for better visibility */
+  position: relative;
+  background: #f8f9fa;
+  border-radius: 12px 12px 0 0;
+}
+
+.streamlit-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px 12px 0 0;
+}
+.project-intro {
+  padding: 2rem;
+  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  color: white;
+}
+
+.project-intro-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.project-intro h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.project-tagline {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 800px;
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.github-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  background: #f8f9fa;
+}
+
+.feature-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.feature-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+}
+
+.feature-card p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.achievements-section {
+  padding: 2rem;
+  background: white;
+}
+
+.achievements-section h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  font-size: 1.8rem;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.achievement-icon {
+  font-size: 1.5rem;
+}
+
+.achievement-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Update/Add to your Portfolio.css */
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.project-section {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.project-content {
+  padding: 2rem;
+}
+
+.project-image-section {
+  margin: -2rem -2rem 2rem -2rem;
+  height: 400px;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
+}
+
+.project-tools-section {
+  padding: 2rem 0 0;
+  border-top: 1px solid #eee;
+  margin-top: 2rem;
+}
+
+.tools-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tool-card {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #2c3e50;
+}
+
+.tool-icon {
+  font-size: 1.2rem;
+}
+
+/* Update existing styles */
+.project-intro {
+  padding: 2rem;
+  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  color: white;
+}
+
+.project-intro-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.project-intro h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.project-tagline {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.achievements-section {
+  margin: 2rem 0;
+}
+
+.achievements-section h3 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.achievement-icon {
+  font-size: 1.5rem;
+}
+
+.achievement-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .project-image-section {
+    height: 300px;
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,28 @@
+/* src/components/sections/SocialLinks.css */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .social-links a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .social-links a:hover {
+    transform: translateY(-3px);
+  }
+  
+  .social-links img {
+    width: 20px;
+    height: 20px;
+  }
