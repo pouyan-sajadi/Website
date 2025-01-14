@@ -200,7 +200,8 @@ function Skills() {
         "SQL",
         "R",
         "Power BI",
-        "AWS (Lambda, Glue, SageMaker)"
+        "AWS (Lambda, Glue, SageMaker)",
+        "Streamlit"
       ]
     },
     {
@@ -284,7 +285,7 @@ function Home() {
   return (
     <div className="home">
       <nav className="navbar">
-  <p className="nav-title">Pouyan Sajadi</p>
+  <p className="nav-title"></p>
   <div className="nav-links">
     <Link to="/">About</Link>
     <Link to="/portfolio">Portfolio</Link>
@@ -300,7 +301,7 @@ function Home() {
               alt="Profile Pic"
             />
             <p className="identity-title">Pouyan Sajadi</p>
-            <p className="identity-major">Data Scientist</p>
+            <p className="identity-major">ML Engineer/Data Scientist</p>
             <div className="social-links">
               <a href="mailto:pouyan.sajadi@gmail.com">
                 <img src={mail} alt="Email" />

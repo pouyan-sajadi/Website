@@ -11,17 +11,6 @@ import gpttImage from '../assets/GPT2.jpg';
 import newssummarization from '../assets/News-summarization.jpg';
 
 function Portfolio() {
-  // Streamlit project
-  const streamlitProject = {
-    id: 'streamlit',
-    title: "Interactive Data Science Portfolio App",
-    description: "Live Streamlit application showcasing real-time data analysis and visualization",
-    url: "https://placescout.streamlit.app/",
-    details: [
-      // We'll add these details later
-    ],
-    tools: ["Streamlit", "Python", "Data Analysis", "Cloud Deployment"]
-  };
 
   const projects = [
     {
@@ -112,7 +101,7 @@ function Portfolio() {
   return (
     <div className="portfolio">
       <nav className="navbar">
-        <p className="nav-title">Pouyan Sajadi</p>
+        <p className="nav-title"></p>
         <div className="nav-links">
           <Link to="/">About</Link>
           <Link to="/portfolio">Portfolio</Link>
