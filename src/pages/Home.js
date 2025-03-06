@@ -93,6 +93,7 @@ function Experience() {
       company: "Simon Fraser University",
       location: "Burnaby, BC",
       date: "Sep. 2022 – Aug. 2024",
+      intro: "As an Applied ML Researcher at Simon Fraser University, I developed a data and ML pipeline to detect faults in the 3D printing process, enabling real-time quality assurance through on-the-fly inference and training.",
       details: [
         "Built a distributed data pipeline on Compute Canada, leveraging parallel processing and multi-node training to enhance scalability and achieve a 12x performance boost.",
         "Reduced validation errors below 3% by integrating physics into ML pipelines in Pytorch, minimizing dependency on large datasets.",
@@ -101,11 +102,26 @@ function Experience() {
       ]
     },
     {
+      id: 4,
+      title: "Data Scientist",
+      company: "Fixshow",
+      location: "Tehran, Iran",
+      date: "Oct. 2021 – Jul. 2022",
+      intro: "At Fixshow, I worked as a Data Scientist in a startup environment, collaborating closely with the marketing team to enhance a home service platform connecting customers with providers across five major cities in Iran.", 
+      details: [
+        "Improved recommendation system performance by 15% via predictive analytics in Scikit-Learn.",
+        "Increased marketing campaign effectiveness by 10% with engineered features for KPIs.",
+        "Boosted customer engagement by optimizing strategies with A/B testing experiments.",
+        "Extracted actionable business insights via statistical modeling and data visualization in Matplotlib."
+      ]
+    },
+    {
       id: 2,
       title: "Data Science Researcher",
       company: "Sharif University of Tech",
       location: "Tehran, Iran",
-      date: "Dec. 2020 – Mar. 2021",
+      date: "Jun. 2021 – Nov. 2021",
+      intro: "As a Data Science Researcher at Sharif University of Tech, I collaborated with a diverse team to analyze over 4 million data points on urban accidents and congestion in LA County, developing a deep learning solution to predict accident impacts.", 
       details: [
         "Achieved 96% precision in accident prediction with deep learning using Tensorflow for urban safety.",
         "Identified high-risk accident periods via temporal trend analysis, enabling targeted interventions.",
@@ -119,26 +135,15 @@ function Experience() {
       company: "Sepehr Plastic",
       location: "Tehran, Iran",
       date: "Oct. 2020 – Jun. 2021",
+      intro: "During my internship as a BI/Data Analyst at Sepehr Plastic, I facilitated the migration from an outdated, traditional database to a modern, centralized data pipeline and management system, optimizing data handling for a large plastic manufacturing company.", 
       details: [
         "Reduced query execution time by 40% by optimizing pipelines and integrating MySQL.",
         "Collaborated with stakeholders to identify and resolve data inconsistencies.",
         "Designed Power BI dashboards adopted by 5+ departments, driving data-informed decisions.",
         "Streamlined data pipelines, reducing cross-departmental data request resolution times by 200%."
       ]
-    },
-    {
-      id: 4,
-      title: "Data Scientist",
-      company: "Fixshow",
-      location: "Tehran, Iran",
-      date: "Apr. 2019 – Dec. 2019",
-      details: [
-        "Improved recommendation system performance by 15% via predictive analytics in Scikit-Learn.",
-        "Increased marketing campaign effectiveness by 10% with engineered features for KPIs.",
-        "Boosted customer engagement by optimizing strategies with A/B testing experiments.",
-        "Extracted actionable business insights via statistical modeling and data visualization in Matplotlib."
-      ]
     }
+
   ];
 
   const toggleDetails = (id) => {
@@ -173,6 +178,7 @@ function Experience() {
             </div>
             {expandedId === exp.id && (
               <div className="experience-details-container">
+                <p className="experience-intro">{exp.intro}</p>
                 <ul className="experience-details">
                   {exp.details.map((detail, idx) => (
                     <li key={idx}>{detail}</li>

@@ -1026,3 +1026,41 @@
     height: 70px;
   }
 }
+.experience-intro {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+  text-align: justify; /* Add this line */
+}
+
+.experience-details {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-details li {
+  color: #555;
+  margin-bottom: 0.8rem;
+  padding-left: 1.2rem;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.experience-details li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #3498db;
+}
+
+.experience-details-container {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+  animation: slideDown 0.3s ease-out;
+}
