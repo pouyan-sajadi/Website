@@ -96,6 +96,7 @@ function Experience() {
       intro: "As an Applied ML Researcher at Simon Fraser University, I developed a data and ML pipeline to detect faults in the 3D printing process, enabling real-time quality assurance through on-the-fly inference and training.",
       details: [
         "Built a distributed data pipeline on Compute Canada, leveraging parallel processing and multi-node training to enhance scalability and achieve a 12x performance boost.",
+        "Leveraged Compute Canada cloud services to scale machine learning experiments, reducing computational costs and time by 5x.",
         "Reduced validation errors below 3% by integrating physics into ML pipelines in Pytorch, minimizing dependency on large datasets.",
         "Enabled real-time adaptability for 3D printing by extending the data pipeline to process live data.",
         "Published in top journals on AI applications in engineering."
@@ -110,6 +111,7 @@ function Experience() {
       intro: "At Fixshow, I worked as a Data Scientist in a startup environment, collaborating closely with the marketing team to enhance a home service platform connecting customers with providers across five major cities in Iran.", 
       details: [
         "Improved recommendation system performance by 15% via predictive analytics in Scikit-Learn.",
+        "Leveraged SQL extensively to optimize database queries, reducing processing time by 2.5x and supporting real-time customer behavior analysis.",
         "Increased marketing campaign effectiveness by 10% with engineered features for KPIs.",
         "Boosted customer engagement by optimizing strategies with A/B testing experiments.",
         "Extracted actionable business insights via statistical modeling and data visualization in Matplotlib."
@@ -125,6 +127,7 @@ function Experience() {
       details: [
         "Achieved 96% precision in accident prediction with deep learning using Tensorflow for urban safety.",
         "Identified high-risk accident periods via temporal trend analysis, enabling targeted interventions.",
+        "Optimized data ETL processes, ensuring high-quality datasets for accurate predictive modeling.",
         "Revealed key urban congestion patterns using EDA and data visualization techniques.",
         "Delivered actionable insights and extracted targeted safety KPIs and measures."
       ]
@@ -137,8 +140,8 @@ function Experience() {
       date: "Oct. 2020 – Jun. 2021",
       intro: "During my internship as a BI/Data Analyst at Sepehr Plastic, I facilitated the migration from an outdated, traditional database to a modern, centralized data pipeline and management system, optimizing data handling for a large plastic manufacturing company.", 
       details: [
-        "Reduced query execution time by 40% by optimizing pipelines and integrating MySQL.",
-        "Collaborated with stakeholders to identify and resolve data inconsistencies.",
+        "Optimized SQL queries and database indexing, reducing ETL and query processing time by 40%.",
+        "Collaborated with HR, finance, and production teams to identify and resolve data inconsistencies.",
         "Designed Power BI dashboards adopted by 5+ departments, driving data-informed decisions.",
         "Streamlined data pipelines, reducing cross-departmental data request resolution times by 200%."
       ]
@@ -307,7 +310,7 @@ function Home() {
               alt="Profile Pic"
             />
             <p className="identity-title">Pouyan Sajadi</p>
-            <p className="identity-major">ML Engineer/Data Scientist</p>
+            <p className="identity-major">Data Scientist / ML Engineer</p>
             <div className="social-links">
               <a href="mailto:pouyan.sajadi@gmail.com">
                 <img src={mail} alt="Email" />
