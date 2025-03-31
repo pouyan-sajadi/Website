@@ -8,25 +8,12 @@ import stockImage from '../assets/Stock prediction.jpg';
 import temperatureImage from '../assets/temperature prediction.jpg';
 import accidentImage from '../assets/accident.jpg';
 import gpttImage from '../assets/GPT2.jpg';
-import newssummarization from '../assets/News-summarization.jpg';
+//import newssummarization from '../assets/News-summarization.jpg';
 
 function Portfolio() {
 
   const projects = [
-    {
-      id: 5,
-      title: "News Article Summarization App",
-      description: "End-to-end pipeline for real-time news summarization using state-of-the-art NLP techniques",
-      image: newssummarization,
-      details: [
-        "Designed an end-to-end pipeline using Streamlit to create an interactive app for real-time news summarization",
-        "Implemented Hugging Face Transformers for text summarization, integrating state-of-the-art NLP techniques",
-        "Enhanced text preprocessing with TextBlob for sentiment analysis, improving overall summarization quality",
-        "Focused on modular and scalable architecture with plans to deploy via FastAPI and containerization"
-      ],
-      tools: ["Python", "Streamlit", "Hugging Face", "NLP", "TextBlob"],
-      githubLink: "https://github.com/pouyan-sajadi/News-article-summarization"
-    },
+    
     {
       id: 6,
       title: "GPT-2 Fine-Tuning",
@@ -154,11 +141,6 @@ function Portfolio() {
       <h3>Recent Searches</h3>
       <p>Quickly revisit and explore previously searched locations.</p>
     </div>
-    <div className="feature-card">
-      <span className="feature-icon">🌍</span>
-      <h3>Interactive Map</h3>
-      <p>Visualize places in real-time for enhanced navigation.</p>
-    </div>
   </div>
 
   <div className="streamlit-container">
@@ -193,7 +175,82 @@ function Portfolio() {
             </div>
           </div>
         </div>
+        {/* News Article Summarization Project Section */}
+        <div className="streamlit-section">
+          <div className="project-intro">
+            <div className="project-intro-header">
+              <h2>News Article Summarization App</h2>
+              <div className="project-links">
+                <a 
+                  href="https://github.com/pouyan-sajadi/News-article-summarization" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="github-link"
+                >
+                  <img src={github} alt="GitHub" />
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+            <p className="project-tagline">
+              End-to-end pipeline for real-time news summarization using state-of-the-art NLP techniques
+            </p>
+          </div>
 
+          <div className="features-grid">
+            <div className="feature-card">
+              <span className="feature-icon">📰</span>
+              <h3>Real-Time Summarization</h3>
+              <p>Instantly generate concise summaries of news articles using advanced NLP models.</p>
+            </div>
+            <div className="feature-card">
+              <span className="feature-icon">🧠</span>
+              <h3>Transformer-Based</h3>
+              <p>Leveraging Hugging Face Transformers for high-quality text summarization.</p>
+            </div>
+            <div className="feature-card">
+              <span className="feature-icon">🌐</span>
+              <h3>Web-Based Interface</h3>
+              <p>User-friendly Streamlit app for easy interaction and summarization.</p>
+            </div>
+            <div className="feature-card">
+              <span className="feature-icon">🔍</span>
+              <h3>Flexible Input</h3>
+              <p>Support for various news article inputs and sources.</p>
+            </div>
+          </div>
+
+          <div className="streamlit-container">
+            <iframe
+              src="https://news-article-summarization.streamlit.app/?embedded=true"
+              title="News Summarization App"
+              className="streamlit-frame"
+              allow="camera;microphone"
+            ></iframe>
+          </div>
+
+          <div className="achievements-section">
+            <h3>Key Achievements</h3>
+            <div className="achievements-grid">
+              <div className="achievement-item">
+                <span className="achievement-icon">🤖</span>
+                <p>Implemented advanced NLP techniques for accurate text summarization</p>
+              </div>
+              <div className="achievement-item">
+                <span className="achievement-icon">📊</span>
+                <p>Integrated sentiment analysis to enhance summary quality</p>
+              </div>
+              <div className="achievement-item">
+                <span className="achievement-icon">💻</span>
+                <p>Created an interactive Streamlit web interface for easy use</p>
+              </div>
+              <div className="achievement-item">
+                <span className="achievement-icon">🌍</span>
+                <p>Developed a scalable and modular NLP pipeline</p>
+              </div>
+            </div>
+          </div>
+        </div>
         {/* Other Projects */}
         <h2 className="section-title">Other Projects</h2>
         <div className="projects-grid">
