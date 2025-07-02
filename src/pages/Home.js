@@ -90,10 +90,10 @@ function Experience() {
     {
       id: 1,
       title: "Applied ML Researcher",
-      company: "Simon Fraser University",
+      company: "Product Design & Optimization Lab",
       location: "Burnaby, BC",
       date: "Sep. 2022 – Aug. 2024",
-      intro: "As an Applied ML Researcher at Simon Fraser University, I developed a data and ML pipeline to detect faults in the 3D printing process, enabling real-time quality assurance through on-the-fly inference and training.",
+      intro: "As an Applied ML Researcher at Product Design & Optimization Lab, I developed a data and ML pipeline to detect faults in the 3D printing process, enabling real-time quality assurance through on-the-fly inference and training.",
       details: [
         "Built a distributed data pipeline on Compute Canada, leveraging parallel processing and multi-node training to enhance scalability and achieve a 12x performance boost.",
         "Leveraged Compute Canada cloud services to scale machine learning experiments, reducing computational costs and time by 5x.",
@@ -107,7 +107,7 @@ function Experience() {
       title: "Data Scientist",
       company: "Fixshow",
       location: "Tehran, Iran",
-      date: "Oct. 2021 – Jul. 2022",
+      date: "Aug. 2021 – Aug. 2022",
       intro: "At Fixshow, I worked as a Data Scientist in a startup environment, collaborating closely with the marketing team to enhance a home service platform connecting customers with providers across five major cities in Iran.", 
       details: [
         "Improved recommendation system performance by 15% via predictive analytics in Scikit-Learn.",
@@ -134,10 +134,10 @@ function Experience() {
     },
     {
       id: 3,
-      title: "Business Intelligence/Data Analyst",
+      title: "Data Analyst",
       company: "Sepehr Plastic",
       location: "Tehran, Iran",
-      date: "Oct. 2020 – Jun. 2021",
+      date: "Apr. 2020 – Jun. 2021",
       intro: "During my internship as a BI/Data Analyst at Sepehr Plastic, I facilitated the migration from an outdated, traditional database to a modern, centralized data pipeline and management system, optimizing data handling for a large plastic manufacturing company.", 
       details: [
         "Optimized SQL queries and database indexing, reducing ETL and query processing time by 40%.",
@@ -243,6 +243,7 @@ function Skills() {
       icon: "💻",
       skills: [
         "Data Structures & Algorithms",
+        "CI/CD pipeline",
         "Version Control",
         "Containarisation",
         "Logging and monitoring"

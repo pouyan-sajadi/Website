@@ -96,7 +96,85 @@ function Portfolio() {
       </nav>
 
       <main className="portfolio-content">
-        <h1 className="portfolio-title">My Projects</h1>
+        <h1 className="portfolio-title">Featured Projects</h1>
+
+{/* Agentic News Debate App Section */}
+<div className="streamlit-section">
+  <div className="project-intro">
+    <div className="project-intro-header">
+      <h2>Agentic News Debate App</h2>
+      <div className="project-links">
+        <a 
+          href="https://github.com/pouyan-sajadi/news_debate_app" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="github-link"
+        >
+          <img src={github} alt="GitHub" />
+          View on GitHub
+        </a>
+      </div>
+    </div>
+    <p className="project-tagline">
+    Production-Ready multi-agent GenAI system that curates diverse news and synthesizes structured debate-style reports in real time
+    </p>
+  </div>
+
+  <div className="features-grid">
+    <div className="feature-card">
+      <span className="feature-icon">🤖</span>
+      <h3>LLM-Powered Agents</h3>
+      <p>Each step — search, profiling, selection, synthesis — is powered by specialized LLM agents working together.</p>
+    </div>
+    <div className="feature-card">
+      <span className="feature-icon">🗞️</span>
+      <h3>Real-Time News Retrieval</h3>
+      <p>Pulls the latest headlines using SerpAPI, dynamically adapted to your topic of interest.</p>
+    </div>
+    <div className="feature-card">
+      <span className="feature-icon">🧠</span>
+      <h3>Diverse Perspective Analysis</h3>
+      <p>Profiles sources and selects a well-rounded set of articles for deeper, unbiased debate construction.</p>
+    </div>
+    <div className="feature-card">
+      <span className="feature-icon">🚀</span>
+      <h3>Production-Ready Design</h3>
+      <p>Built with modular architecture, logging, error handling, and CI integration to ensure scalability and robustness.</p>
+    </div>
+  </div>
+
+  <div className="streamlit-container">
+    <iframe
+      src="https://news-agent-v2.streamlit.app//?embedded=true"
+      title="Agentic News Debate App"
+      className="streamlit-frame"
+      allow="camera;microphone"
+    ></iframe>
+  </div>
+
+  <div className="achievements-section">
+    <h3>Key Achievements</h3>
+    <div className="achievements-grid">
+      <div className="achievement-item">
+        <span className="achievement-icon">🧩</span>
+        <p>Designed a modular multi-agent architecture for end-to-end news processing</p>
+      </div>
+      <div className="achievement-item">
+        <span className="achievement-icon">🧪</span>
+        <p>Integrated CI and automated tests to ensure reliability across updates</p>
+      </div>
+      <div className="achievement-item">
+        <span className="achievement-icon">🌐</span>
+        <p>Deployed on Streamlit Cloud with seamless real-time topic input and result generation</p>
+      </div>
+      <div className="achievement-item">
+        <span className="achievement-icon">📦</span>
+        <p>Utilized SerpAPI and LLMs for live data retrieval and synthesis into structured reports</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
         {/* PlaceScout Project Section */}
         <div className="streamlit-section">
